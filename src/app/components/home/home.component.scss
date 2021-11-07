@@ -1,0 +1,111 @@
+.list_films{
+    padding: 10px 20px;
+    display: flex;
+    overflow-x: scroll;
+    height: 300px;
+    margin-bottom: 30px;
+.top_films{
+    .top_films_img{
+height: 200px;
+width: 350px;
+    }
+    .film{
+        position: relative;
+        background-color: #374D61;
+        padding: 2px;
+        border: 2px solid black;
+        border-radius: 8px ;
+        margin: 10px 5px;
+        padding-bottom: 5px;
+        .movie_title{
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 16px;
+            color: snow;
+        }
+       
+        .addMovie{
+            color: silver;
+            transform: scale(1.1);
+            transition: .2s;
+        }
+    }
+    button{
+        background-color:snow;
+    }
+}
+}
+
+.icon{
+    position: absolute;
+    bottom: -13px;
+    left: -8px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(19, 17, 17);
+    border-radius: 5px;
+    color: #fff;
+}
+
+// form 
+
+.search_form{
+    position: relative;
+    margin-top:20px;
+    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    height: 300px;
+    background-image:  url('https://images.ctfassets.net/hrltx12pl8hq/2r5626WTAoCH0HQ3zq1sjm/dd3c06d998b57db3a4391881f4fe4b8c/compressed_shutterstock_1220507350.jpg?fit=fill&w=800&h=300');
+
+    form{
+        
+        width: 450px;
+        position: absolute;
+        right: 150px;
+        top: 50px;
+        h2{
+            margin-bottom: 0px;
+         }
+        input{
+            padding: 5px;
+            margin: 5px 0px 5px;
+        }
+        button{
+            padding: 10px 30px;
+        }
+    }
+}
+
+.movie_list{
+    display: flex;
+    overflow-y: scroll;
+    .movie{
+        position: relative;
+        margin: 10px;
+    }
+        .movie_img{
+            width: 350px;
+            height: 200px;
+        }
+        .icon_search{
+            position: absolute;
+            bottom:24px;
+            color:darkgrey;
+            background-color: black;
+            border-radius: 50%;
+            left: 2px;
+            &:hover{
+                cursor: pointer;
+                color: #fff;
+                transform: rotate(90deg);
+                transition: .4s;
+                
+            }
+        }
+                
+    }
+    .after_film{
+        height: 150px;
+    }

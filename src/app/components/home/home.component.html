@@ -1,4 +1,4 @@
-<div *ngIf="movie">
+<!-- <div *ngIf="movie">
     <div>
         <span>Movie Title: </span><span>{{ movie.title }}</span>
     </div>
@@ -8,4 +8,40 @@
     <div>
         <span>Movie Release Date: </span><span>{{ movie.release_date}}</span>
     </div>
+</div> -->
+<div class="list_films">
+<div class="top_films" *ngFor="let mov of movie">
+    <div class="film">
+      <img class="top_films_img" src="https://image.tmdb.org/t/p/w1280/{{mov.backdrop_path}}" alt="">
+      <p class="movie_title">{{mov.title || mov.name}}</p>
+      <i (click)="addFlim($event,mov)"  class="icon fa-2x fas fa-plus-circle"></i>
+    </div>
+          
 </div>
+</div>
+
+<div class="search_form">
+    <form>
+        <div class="form-group">
+            <label for="film"><h2>Enter name of film</h2></label>
+            <input #value id="film" type="text" class='form-control'>
+        </div>
+        <button (click)="searchMovie($event)" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<div class="movie_list">
+    <div class="movie" *ngFor="let item of movieSearch">
+        <img class="movie_img"  src="https://image.tmdb.org/t/p/w1280/{{item.backdrop_path}}" alt="">
+        <i (click)="addFlim($event,item)"  class="icon_search fa-3x fas fa-plus-circle"></i>
+        <div>{{item.name || item.title}}</div>
+    </div>
+</div>
+<div class="after_film">
+
+</div>
+
+
+
+

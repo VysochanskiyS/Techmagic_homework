@@ -1,0 +1,27 @@
+
+.header{
+height: 60px;
+background-color: rgb(37, 36, 36);
+display: flex;
+justify-content: space-between;
+align-items: center;
+    a{
+        margin-left: 3rem;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            transition: .2  s;
+            color: coral;
+            cursor: pointer;
+        }
+    }
+    .right{
+        margin-right: 2rem;
+        font-size: 18px;
+        color: tan;
+        border:1px dashed white;
+        padding: 3px 5px;
+    }
+    
+}

@@ -1,0 +1,8 @@
+
+
+ <div class="block_movie">
+    <div class="select_movie" *ngFor="let select_movie of dataMovie">
+        <img  src="https://image.tmdb.org/t/p/w1280/{{select_movie.backdrop_path}}" alt="">
+    <div class="about_selected_movie"><span>{{select_movie.title || select_movie.name}}</span><span>{{select_movie.popularity}}</span></div>
+</div>
+</div>
