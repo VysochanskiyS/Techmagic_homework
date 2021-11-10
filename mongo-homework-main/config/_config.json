@@ -1,0 +1,21 @@
+{
+  "test": {
+    "database": "mongodb://localhost:27017/Student",
+    "dbName": "tc",
+    "dbConfig": {
+      "useUnifiedTopology": true,
+      "useNewUrlParser": true
+    },
+    "seed": false,
+    "debug": true
+  },
+  "local": {
+    "database": "mongodb+srv://Student:123@cluster0.slbxr.mongodb.net/tc?retryWrites=true&w=majority",
+    "dbName": "tc",
+    "seed": true,
+    "dbConfig": {
+      "useUnifiedTopology": true,
+      "useNewUrlParser": true
+    }
+  }
+}
